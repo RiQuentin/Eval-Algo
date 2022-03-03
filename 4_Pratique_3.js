@@ -16,6 +16,19 @@
 
 function afficheMessage(estUrgent, titre, corps) {
 
+    if (estUrgent) {
+        console.log("!!! URGENT !!!");
+    }
+
+    if (titre==="") {
+        console.log("Titre : Message sans titre");
+    }else{
+        console.log("Titre : "+titre);
+    }
+
+    console.log("Object : "+corps)
+
+
 }
 
 // NE PAS MODIFIER APRES CETTE LIGNE

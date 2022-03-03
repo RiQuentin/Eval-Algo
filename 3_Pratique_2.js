@@ -6,13 +6,21 @@
 // Replacer l'instruction "while" de la fonction par une instruction "for".
 
 function compteNombreTour(nombreToursMax) {
+
     let nombreDeTours = 0;
 
+    /** Ancienne boucles
     while (nombreDeTours <= nombreToursMax) {
         console.log("C'est le tour " + nombreDeTours);
 
         nombreDeTours += 1;
     }
+    **/
+    
+    for (nombreDeTours = 0; nombreDeTours <= nombreToursMax; nombreDeTours++) {
+      console.log("C'est le tour " + nombreDeTours);
+    }
+  
 
     if (nombreDeTours <= 1) {
       console.log(nombreDeTours + " tour fait");

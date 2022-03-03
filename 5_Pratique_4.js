@@ -11,8 +11,17 @@
 let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 function decrypte(code) {
+    let decryptedCode ="";
 
-    return "";
+    for (let index = 0; index < code.length; index++) {
+        for (let i = 0; i < alphabet.length; i++) {
+            if (i === code[index]){
+                decryptedCode+=alphabet[i];
+            }
+        }
+    }
+
+    return decryptedCode;
 }
 
 // NE PAS MODIFIER APRES CETTE LIGNE
